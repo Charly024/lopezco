@@ -24,3 +24,6 @@ Las consultas sobre tipos de medios desconocidos son siempre falsas.
   }
 }
 </style>
+
+## REFERENCIA
+[CSS media queries - CSS | MDN. (s. f.). MOZILLA.]: https://developer.mozilla.org/es/docs/Web/CSS/Media_Queries/Using_media_queries
