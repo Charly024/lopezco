@@ -13,17 +13,16 @@ El resultado de la consulta es "verdadero" cuando el tipo de medio (si se especi
 
 Las consultas sobre tipos de medios desconocidos son siempre falsas.
 
-<!-- CSS media query on a link element -->
-<link rel="stylesheet" media="(max-width: 800px)" href="example.css" />
-
-<!-- CSS media query within a style sheet -->
-<style>
-@media (max-width: 600px) {
-  .facet_sidebar {
-    display: none;
-  }
-}
-</style>
+`<!-- CSS media query on a link element -->`
+`<link rel="stylesheet" media="(max-width: 800px)" href="example.css" />`
+`<!-- CSS media query within a style sheet -->`
+`<style>`
+`@media (max-width: 600px) {`
+`  .facet_sidebar {`
+`    display: none;`
+`  }`
+`}`
+`</style>`
 
 ## REFERENCIA
 [CSS media queries - CSS | MDN. (s. f.). MOZILLA.](https://developer.mozilla.org/es/docs/Web/CSS/Media_Queries/Using_media_queries)
