@@ -3,7 +3,7 @@ Las media queries (en español "consultas de medios") son útiles cuando deseas 
 
 Se utilizan para:
 - Aplicar estilos condicionales con las reglas-at @media e @import de CSS.
-- ndicar medios específicos en los elementos <link>, <source> y otros elementos HTML.
+- Indicar medios específicos en los elementos <link>, <source> y otros elementos HTML.
 - Testear y monitorizar los estados de los medios usando los métodos de javascript Window.matchMedia() y MediaQueryList.addListener().
 
 ## SINTAXIS
