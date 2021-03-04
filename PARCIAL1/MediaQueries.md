@@ -16,6 +16,8 @@ Las consultas sobre tipos de medios desconocidos son siempre falsas.
 ~~~
 <!-- CSS media query on a link element -->
 <link rel="stylesheet" media="(max-width: 800px)" href="example.css" />
+
+
 <!-- CSS media query within a style sheet -->
 <style>
 @media (max-width: 600px) {
