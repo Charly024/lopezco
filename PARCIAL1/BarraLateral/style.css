@@ -1,0 +1,28 @@
+body{
+    background-color: #0D0D0D;
+}
+.contenedor{
+    background-color:#737373;
+    margin: auto;
+    width: 90%;
+    text-align: justify;
+}
+
+.contenido{
+    color: #262626;
+}
+
+.lateral{
+    background-color: #262626;
+    color: #F2F2F2;
+}
+
+.listaLateral{
+    padding: 0px ;
+    list-style: none;    
+}
+
+.listaLateral li:hover{
+color: #BFBFBF;
+border: 1px solid white;
+}

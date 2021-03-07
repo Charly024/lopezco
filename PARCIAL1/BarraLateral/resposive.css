@@ -1,0 +1,46 @@
+@media (max-width: 391px){
+    .listaLateral{
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .listaLateral li{
+        text-align: center;
+        margin: 5% 0;
+    }
+}
+
+@media (max-width: 721px) and (min-width:391px){
+
+  ul {
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  .listaLateral li{
+      padding: 0 15px;
+  }
+
+}
+
+@media (min-width: 721px){
+    .contenedor{
+        margin: auto;
+        display: flex;
+        width: 90%;
+    }
+
+    .contenido{
+        width: 85%;
+        padding: 0 20px;
+    }
+
+    .lateral{
+        width:15%;
+    }
+
+    .listaLateral li{
+        text-align: right;
+        padding: 20% 10px;
+    }
+}
