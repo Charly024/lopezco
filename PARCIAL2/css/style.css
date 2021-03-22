@@ -1,0 +1,13 @@
+*{
+    background-color: #F2F0F2;
+    color: #020214;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.col-md-7{
+    padding: 10px;
+    border: 2px solid #17a2b8;
+    border-radius: 2em/2em;
+}
+
