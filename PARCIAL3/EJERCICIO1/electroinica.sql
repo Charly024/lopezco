@@ -1,3 +1,4 @@
+/*PHPMYADMIN*/
 CREATE DATABASE electronica;
 
 USE electronica;
