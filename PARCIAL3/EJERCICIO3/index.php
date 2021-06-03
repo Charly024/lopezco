@@ -1,10 +1,9 @@
 <?php
-	
-	require 'conexion.php';
-	
-	$sql = "SELECT id, codigo, componente, voltaje, amperaje, material FROM componentes";
-	$resultado = $mysqli->query($sql);
-	
+	include	 "conexion.php";
+	$consultaSQL = "select id, codigo, componente, voltaje, amperaje, material from componentes";
+	$consulta = $con -> prepare($consultaSQL);
+	$consulta -> execute();
+	$resultado = $consulta->fetchAll(PDO::FETCH_OBJ);
 ?>
 
 <!DOCTYPE html>
@@ -33,12 +32,10 @@
 <body>
 <div class="container">
 			<div class="row">
-				<h1>Empleados</h1>
+				<h1>Componentes</h1>
 			</div>
 			
-			<div class="row">
-				<a href="nuevo.php" class="btn btn-primary">Registrar</a>
-			</div>
+
 			
 			<table id="tabla" class="display" style="width:100%">
 				<thead>
@@ -52,14 +49,16 @@
 					</tr>
 				</thead>
 				<tbody>
-					<?php while($fila = $resultado->fetch_assoc()) { ?>
+					<?php  
+					for ($i=0; $i<=count($resultado)-1; $i++) {
+					?>
 						<tr>
-							<td><?php echo $fila['id']; ?></td>
-							<td><?php echo $fila['codigo']; ?></td>
-							<td><?php echo $fila['componeete']; ?></td>
-							<td><?php echo $fila['voltaje']; ?></td>
-							<td><?php echo $fila['amperaje']; ?></td>
-							<td><?php echo $fila['material']; ?> </td>
+						<td><?php printf($resultado[$i]->id);?></td>
+						<td><?php printf($resultado[$i]->codigo);?></td>
+						<td><?php printf($resultado[$i]->componente);?></td>
+						<td><?php printf($resultado[$i]->voltaje);?></td>
+						<td><?php printf($resultado[$i]->amperaje);?></td>
+						<td><?php printf($resultado[$i]->material);?></td>
 						</tr>
 					<?php } ?>
 				</tbody>
